@@ -10,16 +10,16 @@ public class AreaAndPerimeter {
         double area, perimeter, circumference;
 
         //Square
-        System.out.print("Enter Square Length of side CM is : ");
+        /*System.out.print("Enter Square Length of side CM is : ");
         double side = sc.nextDouble();
 
         area = side * side;
         perimeter = side * 4;
         System.out.println("Square Area is: " + area);
-        System.out.println("Square Perimeter is: " + perimeter);
+        System.out.println("Square Perimeter is: " + perimeter);*/
 
         //Rectangle
-        System.out.print("Enter Rectangle Length CM is: ");
+        /*System.out.print("Enter Rectangle Length CM is: ");
         double length = sc.nextDouble();
         System.out.print("Enter Rectangle Width CM is: ");
         double width = sc.nextDouble();
@@ -27,10 +27,10 @@ public class AreaAndPerimeter {
         area = length * width;
         perimeter = 2 * (length + width);
         System.out.println("Rectangle Area is: " + area);
-        System.out.println("Rectangle Perimeter is: " + perimeter);
+        System.out.println("Rectangle Perimeter is: " + perimeter);*/
 
         //Triangle
-        System.out.print("Enter Triangle Side CM is: ");
+        /*System.out.print("Enter Triangle Side CM is: ");
         double side = sc.nextDouble();
         System.out.print("Enter Triangle Base CM is: ");
         double base = sc.nextDouble();
@@ -40,19 +40,19 @@ public class AreaAndPerimeter {
         area = (base * height) / 2;
         perimeter = side + base + height;
         System.out.println("Triangle Area is: " + area);
-        System.out.println("Triangle Perimeter is: " + perimeter);
+        System.out.println("Triangle Perimeter is: " + perimeter);*/
 
         //Circle
-        System.out.print("Enter Circle Radios CM is: ");
+        /*System.out.print("Enter Circle Radios CM is: ");
         double radios = sc.nextDouble();
 
         area = PI * radios * radios;
         circumference = 2 * PI * radios;
         System.out.println("Circle Area is: " + area);
-        System.out.println("Circle Circumference is: " + circumference);
+        System.out.println("Circle Circumference is: " + circumference);*/
 
         //Rhombus
-        System.out.print("Enter Rhombus Side CM is: ");
+        /*System.out.print("Enter Rhombus Side CM is: ");
         double side = sc.nextDouble();
         System.out.print("Enter Rhombus Base CM is: ");
         double base = sc.nextDouble();
@@ -62,7 +62,7 @@ public class AreaAndPerimeter {
         area = (base * height) / 2;
         perimeter = 4 * side;
         System.out.println("Rhombus Area is: " + area);
-        System.out.println("Rhombus Perimeter is: " + perimeter);
+        System.out.println("Rhombus Perimeter is: " + perimeter);*/
 
 
 
