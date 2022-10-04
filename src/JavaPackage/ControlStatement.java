@@ -28,7 +28,7 @@ public class ControlStatement {
             System.out.println(userSearch+ " is a Consonant");
         }*/
 
-        //Check Capital or Small
+        //Check Capital or Small =>01
         /*System.out.print("Type letter: ");
         String userSearch = sc.nextLine();
 
@@ -37,6 +37,15 @@ public class ControlStatement {
         } else {
             System.out.println("Small Letter");
         }*/
+        //Check Capital or Small =>02
+        char userSearch = sc.next().charAt(0);
+        if (userSearch >= 'A' && userSearch <= 'Z'){
+            System.out.println("Capital Letter");
+        } else if (userSearch >= 'a' && userSearch <= 'z') {
+            System.out.println("Small Letter");
+        } else {
+            System.out.println("Not a Letter");
+        }
 
         //Check Maximum or Minimum Number
         /*System.out.print("Type First inter number: ");
@@ -53,14 +62,14 @@ public class ControlStatement {
         }*/
 
         //Check Leap Year
-        System.out.print("Type a full Year number(4 digit): ");
+        /*System.out.print("Type a full Year number(4 digit): ");
         int userYear = sc.nextInt();
 
         if ((userYear % 400 == 0) || (userYear % 4 == 0) || (userYear % 100 == 0)){
             System.out.println(userYear+ " Leap Year");
         }else {
             System.out.println(userYear+ " Not Leap Year");
-        }
+        }*/
 
 
     }
