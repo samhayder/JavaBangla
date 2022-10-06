@@ -38,14 +38,14 @@ public class ControlStatement {
             System.out.println("Small Letter");
         }*/
         //Check Capital or Small =>02
-        char userSearch = sc.next().charAt(0);
+        /*char userSearch = sc.next().charAt(0);
         if (userSearch >= 'A' && userSearch <= 'Z'){
             System.out.println("Capital Letter");
         } else if (userSearch >= 'a' && userSearch <= 'z') {
             System.out.println("Small Letter");
         } else {
             System.out.println("Not a Letter");
-        }
+        }*/
 
         //Check Maximum or Minimum Number
         /*System.out.print("Type First inter number: ");
@@ -70,6 +70,62 @@ public class ControlStatement {
         }else {
             System.out.println(userYear+ " Not Leap Year");
         }*/
+
+        // ***** Bitwise ******
+        // & => Bitwise and (*)
+        // | => Bitwise or (+)
+        // ^ => Bitwise EXOR (-1 count)
+        // >> => Bitwise Shift Right
+        // << => Bitwise Shift left
+        // ! => Bitwise NOT
+
+        /*int a = 420;
+        int b = 12;
+        int c;
+
+        c = a & b;
+        System.out.println("Bitwise And is: " + c);
+
+        c = a | b;
+        System.out.println("Bitwise Or is: " + c);
+
+        c = a ^ b;
+        System.out.println("Bitwise Exor is: " + c);*/
+
+        //01. Print sum of all the numbers from 1 to 10
+        int sum = 0;
+        for (int i = 1; i <= 10; i++){
+             sum = sum + i;
+        }
+        System.out.println("Sum of all the numbers from 1 to 10 is: " + sum);
+
+        //02. Print Minas of all the numbers from 1 to 10
+        int subtract = 0;
+        for (int i = 1; i <= 15; i++){
+            subtract = subtract - i;
+        }
+        System.out.println("Subtract of all the numbers from 1 to 10 is: " + subtract);
+
+        //3. Print sum of all the even numbers from m to n
+        int sumEven = 0;
+        for (int i = 1; i <= 10; i++){
+            if (i % 2 == 0){
+                sumEven = sumEven + i;
+            }
+        }
+        System.out.println("Sum of all the Even numbers from 1 to 10 is: " + sumEven);
+
+        //04. Print sum off all the odd numbers from m to n
+        int sumOdd = 0;
+        for (int i = 1; i <= 10; i++){
+            if (i % 2 != 0){
+                sumOdd = sumOdd + i;
+            }
+        }
+        System.out.println("Sum of all the Odd numbers from 1 to 10 is: " + sumOdd);
+
+        
+
 
 
     }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class AreaAndPerimeter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        final double PI = 3.14159;
+        double Pi = Math.PI;
 
         double area, perimeter, circumference;
 
@@ -46,8 +46,8 @@ public class AreaAndPerimeter {
         /*System.out.print("Enter Circle Radios CM is: ");
         double radios = sc.nextDouble();
 
-        area = PI * radios * radios;
-        circumference = 2 * PI * radios;
+        area = Pi * radios * radios;
+        circumference = 2 * Pi * radios;
         System.out.println("Circle Area is: " + area);
         System.out.println("Circle Circumference is: " + circumference);*/
 
