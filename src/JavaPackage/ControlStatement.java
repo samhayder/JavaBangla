@@ -71,7 +71,7 @@ public class ControlStatement {
             System.out.println(userYear+ " Not Leap Year");
         }*/
 
-        // ***** Bitwise ******
+        // ***** Bitwise ******************************
         // & => Bitwise and (*)
         // | => Bitwise or (+)
         // ^ => Bitwise EXOR (-1 count)
@@ -123,6 +123,99 @@ public class ControlStatement {
             }
         }
         System.out.println("Sum of all the Odd numbers from 1 to 10 is: " + sumOdd);
+
+        //*********** Series *****************************
+        //01. 1+2+3+...+n
+        int n = 10;
+        double nFloat = 10;
+        double sumResultFloat = 0;
+        int sumResult = 0;
+        int multiplyResult = 1;
+
+        for (int i = 1; i <= n; i = i+1){
+            sumResult = sumResult + i;
+        }
+        System.out.println("Series 01=> sum off n numbers: "+sumResult);
+
+        //02. 1+3+5...+n
+        for (int i = 1; i <= n; i = i+2){
+            sumResult = sumResult + i;
+        }
+        System.out.println("Series 02=> sum off n numbers: "+sumResult);
+
+        //03. 1.5+2.5+3.5...+n.5
+        for (double i = 1.5; i <= nFloat; i = i+1){
+            sumResultFloat = sumResultFloat + i;
+        }
+        System.out.println("Series 03> sum  off n numbers: "+sumResultFloat);
+
+        //04. 2x4x6...xn
+        for (int i = 2; i <= n; i = i+2){
+            multiplyResult = multiplyResult * i;
+        }
+        System.out.println("Series 04=> Multiply off n numbers: "+multiplyResult);
+
+        //05. 1^2x2^2x3^2...xn^2
+        for (int i = 1; i <= n; i = i+1){
+            multiplyResult = multiplyResult * i*i;
+        }
+        System.out.println("Series 05=> Multiply off n numbers: "+multiplyResult);
+
+        //************ Factorial Number **************************
+        int factNum = 12;
+        int factResult = 1;
+
+        for (int i = factNum; i >= 1; i--){
+            factResult = factResult * i;
+        }
+        System.out.println(factNum+"! Factorial Number is: "+ factResult);
+
+        //************ Multiplication Table **************************
+        int startNum = 1;
+        int endNum = 3;
+
+        for (int i = startNum; i <= endNum; i++){
+            //Inner Loop for Time Table
+            for (int j = 1; j <= 10; j++){
+                System.out.println(i + "x" + j + " = " +i*j);
+            }
+            System.out.println();
+        }
+
+        //************ Prime Number **************************
+        int primeNum = 13;
+        int count = 0;
+
+        for (int i = 2; i < primeNum; i++){
+            if (primeNum % i == 0){
+                count++;
+                break;
+            }
+        }
+        if (count == 0){
+            System.out.println(primeNum + " is a Prime Number.");
+        }else {
+            System.out.println(primeNum + "is not a Prime Number.");
+        }
+
+        //02 Prime number m to n
+        int startPrimeNum = 2;
+        int endPrimeNum = 100;
+
+        for (int i = startPrimeNum; i <= endPrimeNum; i++){
+            for (int j = 2; j < i; j++){
+                if (i % j == 0){
+                    count++;
+                    break;
+                }
+            }
+            if (count == 0){
+                System.out.println(startPrimeNum + " to " + endPrimeNum + " is all prime number: " + i);
+            }
+            count = 0;
+        }
+
+
 
         
 
