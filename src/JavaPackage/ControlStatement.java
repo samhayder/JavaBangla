@@ -6,6 +6,21 @@ import java.util.Scanner;
 public class ControlStatement {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        /*
+        ***** Control Statement *****
+         01.Selection
+            01.1. if
+            01.2. else
+            01.3. switch
+         02.Iteration/Looping
+            02.1. for
+            02.2. while
+            02.3. do while
+         03.Jump
+            03.1. break
+            03.2. continue
+            03.3. return
+          */
 
         //Check Odd or Even number
         /*System.out.print("Enter positive integer number: ");
@@ -214,6 +229,76 @@ public class ControlStatement {
             }
             count = 0;
         }
+
+        //************ Fibonacci Series **************************
+        //0 1 1 2 3 5 8 13 21 ...
+        int fiboNum = 10;
+        int firstFibo = 0;
+        int secondFibo = 1;
+        int fibonacci;
+
+        System.out.print(firstFibo + " " + secondFibo);
+
+        for (int i = 3; i <= fiboNum; i++){
+            fibonacci = firstFibo + secondFibo;
+            firstFibo = secondFibo;
+            secondFibo = fibonacci;
+            System.out.print(" "+fibonacci);
+        }
+        System.out.println();
+
+        //************ Sum of Digit **************************
+        //123 => 6
+        int numInput = 153;
+        int temp = numInput;
+        int sumOfDigit = 0;
+        int rem;
+
+        /*
+        while (temp != 0){
+            rem = temp % 10;
+            sumOfDigit = sumOfDigit + rem;
+            temp = temp / 10;
+        }
+        System.out.println(numInput+ " Sum of Digit: " + sumOfDigit);
+        */
+
+        //Reverse Number 123 => 321
+        /*
+        while (temp != 0){
+            rem = temp % 10;
+            sumOfDigit = sumOfDigit * 10 + rem;
+            temp = temp / 10;
+        }
+        System.out.println(numInput + " Reverse Number: " + sumOfDigit);
+        */
+
+        //Palindrome Number 121 => 121
+        /*
+        while (temp != 0){
+            rem = temp % 10;
+            sumOfDigit = sumOfDigit * 10 + rem;
+            temp = temp / 10;
+        }
+        if (numInput == sumOfDigit){
+            System.out.println(numInput + " Palindrome Number.");
+        } else {
+            System.out.println(numInput + " Not a Palindrome Number.");
+        }
+        */
+
+        //Armstrong Number 153 => 1^3 + 5^3 + 5^3 = 153
+        while (temp != 0){
+            rem = temp % 10;
+            sumOfDigit = sumOfDigit + rem * rem * rem;
+            temp = temp / 10;
+        }
+        if (numInput == sumOfDigit){
+            System.out.println(numInput + " Armstrong Number.");
+        } else {
+            System.out.println(numInput + " Not a Armstrong Number.");
+        }
+
 
 
 
