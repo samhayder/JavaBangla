@@ -68,6 +68,74 @@ public class StringDemo {
             System.out.println(x);
         }
 
+        // ******* String Buffer ***********
+        StringBuffer sb = new StringBuffer("Salman Yasin ");
+        System.out.println("String Buffer output: " + sb);
+
+        // append() => add value any type of data
+        sb.append(10);
+        System.out.println("Appended value: " + sb);
+
+        // delete()
+        sb.delete(12,15);
+        System.out.println("Delete: " + sb);
+
+        // reverse()
+        sb.reverse();
+        System.out.println("Reverse String: " + sb);
+
+        //Palindrome String
+        String palindromeStr = "madam";
+        StringBuffer strReverse = new StringBuffer(palindromeStr);
+
+        String palinReverse = strReverse.reverse().toString();
+
+        if (palindromeStr.equals(palinReverse)) {
+            System.out.println(palindromeStr + " is a Palindrome.");
+        } else {
+            System.out.println(palindromeStr + " is not a Palindrome.");
+        }
+
+        // ********* Conversation ************
+        // Primitive data type => Object
+          /*int => Integer
+            byte => Byte
+            float => Float
+            long => Long
+            double => Double
+            char = Character
+            boolean => Boolean
+            short => Short  */
+        int priDataInt = 32;
+        Integer objInt = Integer.valueOf(priDataInt);
+        System.out.println("Primitive int => Object Integer: " + objInt);
+
+        double priDataDouble = 3.1415;
+        Double objDouble = priDataDouble;
+        System.out.println("Primitive double => Object Double: " + objDouble);
+
+        boolean priDataBoolean = true;
+        Boolean objBoolean = priDataBoolean;
+        System.out.println("Primitive boolean => Object Boolean: " + objBoolean);
+
+        // Primitive => String
+        int priToStr = 420;
+        String strToPri = Integer.toString(priToStr);
+        System.out.println("Primitive int => String: " + strToPri);
+
+        char priToChar = 'S';
+        String strTOChar = Character.toString(priToChar);
+        System.out.println("Primitive char => String: " + strTOChar);
+
+        // String => Primitive
+        String convertPri = "420";
+        int convertStr = Integer.parseInt(convertPri);
+        System.out.println("String int => Primitive int: " + convertStr);
+
+        String convertPri2 = "false";
+        boolean convertStr2 = Boolean.valueOf(convertPri2);
+        System.out.println("String boolean => Primitive boolean: " + convertStr2);
+
 
 
 
