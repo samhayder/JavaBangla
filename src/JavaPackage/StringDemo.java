@@ -137,6 +137,20 @@ public class StringDemo {
         System.out.println("String boolean => Primitive boolean: " + convertStr2);
 
 
+        // ******* Number Conversation ***********
+        // Binary, Octal, Hexadecimal => Decimal
+        String binary = "10101";
+        Integer decimalToBinary = Integer.parseInt(binary,2);
+        System.out.println("Binary => Decimal: " + decimalToBinary);
+
+        String octal = "123";
+        Integer decimalToOctal = Integer.parseInt(octal,8);
+        System.out.println("Octal => Decimal: " + decimalToOctal);
+
+        String hexadecimal = "f";
+        Integer decimalToHexa = Integer.parseInt(hexadecimal,16);
+        System.out.println("Hexadecimal => Decimal: " + decimalToHexa);
+
 
 
     }
