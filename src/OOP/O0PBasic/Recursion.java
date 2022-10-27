@@ -1,5 +1,7 @@
 package OOP.O0PBasic;
 
+import java.util.Scanner;
+
 public class Recursion {
 
     //Using Recursion to calculate factorial number
@@ -43,6 +45,8 @@ public class Recursion {
         }
         gcd = num1;
         System.out.println(gcd);
+
+
 
 
     }
