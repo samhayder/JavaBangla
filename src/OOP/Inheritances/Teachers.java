@@ -13,8 +13,9 @@ public class Teachers extends Persons{
     }
 
     //print Teacher
-    void printTeacher() {
-        printPerson();
+    @Override
+    void display() {
+        super.display();
         System.out.println("Qualifications: " + getQualification());
         System.out.println();
     }

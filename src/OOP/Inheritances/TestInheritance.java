@@ -1,5 +1,7 @@
 package OOP.Inheritances;
 
+import java.util.Scanner;
+
 public class TestInheritance {
     public static void main(String[] args) {
         Teachers t1 = new Teachers();
@@ -8,7 +10,7 @@ public class TestInheritance {
         t1.setAge(18);
         t1.setQualification("BSC in computer");
 
-        t1.printTeacher();
+        t1.display();
 
         // ****** instanceof Operator *********
         //Persons --> <-- Teachers --> Students
@@ -20,6 +22,8 @@ public class TestInheritance {
         System.out.println(student instanceof Teachers);
         System.out.println(student instanceof Persons);
         System.out.println(teacher instanceof Students);
+
+
 
     }
 }

@@ -19,7 +19,7 @@ public class Persons {
     }
 
     //Print
-    void printPerson() {
+    void display() {
         System.out.println("Name: " + getName());
         System.out.println("Age: " + getAge());
     }
