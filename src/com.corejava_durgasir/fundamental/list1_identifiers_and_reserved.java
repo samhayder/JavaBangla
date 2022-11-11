@@ -1,19 +1,19 @@
 package com.corejava_durgasir.fundamental;
 
-public class part1_identifiers_and_reserved {
+public class list1_identifiers_and_reserved {
     public static void main(String[] args) {
 
     //Languages Fundamentals List
-    //01. Identifies
-    //02. Reserved Word
-    //03. Data Types
-    //04. Literals
-    //05. Arrays
-    //06. Types of Variables
-    //07. Var-am Methods
-    //08. Main Methods
-    //09. Command line arguments
-    //10. Java coding standers
+    //List01. Identifies
+    //List02. Reserved Word
+    //List03. Data Types
+    //List04. Literals
+    //List05. Arrays
+    //List06. Types of Variables
+    //List07. Var-am Methods
+    //List08. Main Methods
+    //List09. Command line arguments
+    //List10. Java coding standers
 
         // ****** 01. Identifier ******
         //Identifies is 6 rules
