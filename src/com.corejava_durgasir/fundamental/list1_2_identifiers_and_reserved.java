@@ -1,6 +1,6 @@
 package com.corejava_durgasir.fundamental;
 
-public class list1_identifiers_and_reserved {
+public class list1_2_identifiers_and_reserved {
     public static void main(String[] args) {
 
     //Languages Fundamentals List

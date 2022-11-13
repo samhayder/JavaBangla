@@ -1,6 +1,6 @@
 package com.corejava_durgasir.fundamental;
 
-public class list2_datatypes {
+public class list3_datatypes {
     public static void main(String[] args){
 
         //Primitive data types [8]
